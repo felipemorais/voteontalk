@@ -1,0 +1,4 @@
+[
+{ "id": 1, "title": "Nodejs com express", "speaker": "Felipe Morais" },
+{ "id": 2, "title": "palestra socket.io", "speaker": "Lorem Ipsum" }
+]

@@ -1,0 +1,16 @@
+<div class="hero-unit">
+	<h1>Vote On Talk!</h1>
+	<h3>Palestras Disponíveis</h3>
+	
+	<div class="row">
+		<div class="well well-small">
+			<ul class="nav nav-list">
+				<li ng-repeat="talk in talklist">
+					<a href="#/detail/{{talk.id}}">
+						{{talk.title}} <i class="icon-chevron-right"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

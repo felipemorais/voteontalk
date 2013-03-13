@@ -1,0 +1,32 @@
+<div class="hero-unit">
+  <h1>Vote On Talk!</h1>
+  <h3>Detalhes da Palestra</h3>
+  {{talkUpdate()}}
+  <div class="row">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="#/" class="btn btn-primary">Voltar</a>
+      </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="well well-small">
+      <ul>
+          <li>Nome: {{talk.title}}</li>
+          <li>Palestrante: {{talk.speaker}}</li>
+          <li>Descrição: {{talk.description}}</li>
+      </ul>
+      <form action="">
+        
+        <button ng-click="voteTalk('1')" class="btn btn-large btn-success"><i class="icon-thumbs-up"></i> Gostei</button>
+        <button ng-click="voteTalk('0')" class="btn btn-large btn-danger"><i class="icon-thumbs-down"></i> Não Gostei</button>
+      </form>
+    </div>
+
+    <!-- MAPS directive
+    <div class="well well-small">
+      <div mova-map class="map" mova-options="mapOptions"></div>
+    </div>
+    -->
+  </div>   
+</div>

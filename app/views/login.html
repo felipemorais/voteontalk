@@ -1,0 +1,17 @@
+<div class="hero-unit">
+  <h1>Vote On Talk!</h1>
+  <form ng-submit="loginUser()" name="formLogin" class="form-horizontal">
+    <div class="control-group" ng-class="{error: formLogin.token.$invalid}">
+      <label class="control-label" for="inputToken">Access Token:</label>
+      <div class="controls">
+        <input id="inputToken" type="text" name="token" ng-model="token" required>
+        <span ng-show="formLogin.token.$error.required" class="help-inline">Required</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+  	   <input class="btn btn-primary" type="submit" value="Entrar">
+      </div>
+    </div>
+  </form>
+</div>
